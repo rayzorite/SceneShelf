@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2537mqjqwvv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4km84"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.09291095, 0.10374465, 0.1290245, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txypa"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.13644585, 0.14645913, 0.18149039, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ma6ja"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.09291095, 0.10374465, 0.1290245, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7jj4y"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.13644585, 0.14645913, 0.18149039, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4km84"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07opu"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 10.0
+bg_color = Color(0.1057109, 0.11943018, 0.14343926, 1)
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.13725491)
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[node name="SceneCategoryPanel" type="FoldableContainer"]
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/hover_font_color = Color(1, 1, 1, 1)
+theme_override_colors/collapsed_font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/title_panel = SubResource("StyleBoxFlat_4km84")
+theme_override_styles/title_hover_panel = SubResource("StyleBoxFlat_txypa")
+theme_override_styles/title_collapsed_panel = SubResource("StyleBoxFlat_ma6ja")
+theme_override_styles/title_collapsed_hover_panel = SubResource("StyleBoxFlat_7jj4y")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4km84")
+theme_override_styles/panel = SubResource("StyleBoxFlat_07opu")
+folded = true
+title = "CATEGORY NAME"
+
+[node name="ListContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6

@@ -1,0 +1,152 @@
+[gd_scene load_steps=9 format=3 uid="uid://nlh8hewi7iwu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07opu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcuvh"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0.18039216, 0.20392157, 0.23921569, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.31280047, 0.34708035, 0.3985012, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.09803922)
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83rk2"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0.14375576, 0.16378099, 0.1938192, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.31280047, 0.34708035, 0.3985012, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.09803922)
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpvep"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0.22329131, 0.2507686, 0.29198414, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.31280047, 0.34708035, 0.3985012, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.09803922)
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ma6ja"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0wn1"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(1, 0.21956226, 0.24823165, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.4699337, 0.531416, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.09803922)
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y72il"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0.9365851, 0, 0.1551092, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.4699337, 0.531416, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.09803922)
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tys4"]
+content_margin_left = 15.0
+content_margin_top = 5.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0.999891, 0.26591703, 0.2774081, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.4699337, 0.531416, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.09803922)
+shadow_size = 2
+shadow_offset = Vector2(0, 1)
+
+[node name="ScenePanel" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 40)
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_07opu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SceneButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_bcuvh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83rk2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cpvep")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ma6ja")
+text = "SCENE NAME"
+alignment = 0
+text_overrun_behavior = 3
+
+[node name="DeleteSceneButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_j0wn1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y72il")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1tys4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ma6ja")
+text = "DELETE"
+alignment = 0
